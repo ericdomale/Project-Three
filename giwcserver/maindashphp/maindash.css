@@ -1,0 +1,178 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:  'Circular Std', sans-serif;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {font-family: "Euclid Circular A Semibold";
+  src: url("4ffb8f8bf98af1f17a1c7dd23fe80935.eot"); /* IE9*/
+  src: url("4ffb8f8bf98af1f17a1c7dd23fe80935.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("4ffb8f8bf98af1f17a1c7dd23fe80935.woff2") format("woff2"), /* chrome、firefox */
+  url("4ffb8f8bf98af1f17a1c7dd23fe80935.woff") format("woff"), /* chrome、firefox */
+  url("4ffb8f8bf98af1f17a1c7dd23fe80935.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("4ffb8f8bf98af1f17a1c7dd23fe80935.svg#Euclid Circular A Semibold") format("svg"); /* iOS 4.1- */
+}
+
+.container
+{
+    position: relative;
+    width: 1200px;
+    height: 150px;
+    margin: 30px auto;
+}
+.container .box
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(250px - 30px);
+    background: #fafafa;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    display: block;
+}
+.container .box .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container .box:hover .icon
+{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .box .icon .img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    transition: 0.5s;
+   }
+.container .box:hover .icon .img
+{
+    font-size: 10px;
+}
+.container .box .content
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .box:hover .content
+{
+    top: 100px;
+    opacity: 1;
+}
+.container .box .content h3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #084622;
+    font-size: 30px;
+    /*background: seagreen;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;*/
+}
+.container .box .content p
+{
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: -webkit-linear-gradient( 50deg, #017715, #37cf08c7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+header{
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .left_area h2{
+    color: rgb(102, 38, 38);
+    margin: 0;
+    /*text-transform: uppercase;*/
+    font-size: 40px;
+    font-weight: 950;
+  }
+  
+  .left_area span{
+    color: #000000;
+    font-family: 'Circular Std';
+  }
+  
+  .logout_btn{
+    padding: 5px;
+    background: seagreen;
+    text-decoration: none;
+    float: right;
+    margin-top: -60px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+    font-family:  'Circular Std';
+  }
+  
+  .logout_btn:hover, .home_btn:hover{
+    background: #24aa41;
+  }
+  .home_btn{
+    padding: 5px;
+    background: seagreen;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 120px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+    font-family:  'Circular Std';
+  }
+
+  .left_area .jpg{
+    width: 6%;
+  }
+
+ 

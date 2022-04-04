@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminboard</title>
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev" onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="JavaScriptBudgetCrud/index.html"><img class="next" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/database-2-fill.svg"><span>Adminboard.</span></h3>
+        </div>
+        <div class="right_area">
+            <a  href="settings.html" class="home_btn">Home</a>
+        </div>
+        <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                   <a href="">
+                     <span class="icon"><i class="fas fa-home"></i></span>
+                     <span class="title"><h2>Overview</h2></span>
+                   </a>
+                </li>
+                <li>
+                   <a href="">
+                     <span class="icon"><i class="fas fa-user"></i></span>
+                     <span class="title">Membership</span>
+                   </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-usd"></i></span>
+                     <span class="title">Offerings & Tithes </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-credit-card"></i></span>
+                     <span class="title">Expenses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-bar-chart-o"></i></span>
+                     <span class="title">Revenue</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                     <span class="title">Events & Programs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-car"></i></span>
+                     <span class="title">Pledges</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-users"></i></span>
+                     <span class="title">Staff</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-shopping-basket"></i></span>
+                     <span class="title">Members Tithes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                     <span class="icon"><i class="fas fa-cog"></i></span>
+                     <span class="title">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder=" Search here...">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="giwclogo.jpg">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers"> 142</div>
+                        <div class="cardName">Members</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">GHS 942</div>
+                        <div class="cardName">Revenue</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-bar-chart-o"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">GHS 1,942</div>
+                        <div class="cardName">Expenses</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">GHS 5,700,000</div>
+                        <div class="cardName">Offering</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-usd"></i>
+                    </div>
+                </div>
+            </div>
+
+             <div class="details">
+                 <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Pledges</h2>
+                        <a href="" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Program</td>
+                                <td>Date</td>
+                                <td>Amount</td>
+                                <td>Month</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Warren Buffet</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>January</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Warren Buffet</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>January</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Elon Musk</td>
+                                <td>Shiloh Conference</td>
+                                <td>2021-04-10</td>
+                                <td>GHS 400</td>
+                                <td>June</td>
+                                <td><span class="status paid">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jeff Bezos</td>
+                                <td>Iron Conference</td>
+                                <td>2021-06-03</td>
+                                <td>GHS 870</td>
+                                <td>October</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Patrick Collision</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>August</td>
+                                <td><span class="status paid">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Warren Buffet</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>January</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Warren Buffet</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>January</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Elon Musk</td>
+                                <td>Shiloh Conference</td>
+                                <td>2021-04-10</td>
+                                <td>GHS 400</td>
+                                <td>June</td>
+                                <td><span class="status paid">Paid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jeff Bezos</td>
+                                <td>Iron Conference</td>
+                                <td>2021-06-03</td>
+                                <td>GHS 870</td>
+                                <td>October</td>
+                                <td><span class="status unpaid">Unpaid</span></td>
+                            </tr>
+                            <tr>
+                                <td>Patrick Collision</td>
+                                <td>Stability Conference</td>
+                                <td>2021-04-03</td>
+                                <td>GHS 500</td>
+                                <td>August</td>
+                                <td><span class="status paid">Paid</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+                 <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Programs</h2>
+                        <a href="" class="btn">View All</a>
+                    </div>
+                     <table>
+                         <tbody>
+                             <tr>
+                                 <td width="60px"><div class="imgBx"><img src="giwclogo.jpg"></div></td>
+                                 <td><h4>Stability<br><span>Conference</span></h4></td>
+                             </tr>
+                             <tr>
+                                <td width="60px"><div class="imgBx"><img src="giwclogo.jpg"></div></td>
+                                <td><h4>Shiloh<br><span>Conference</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="giwclogo.jpg"></div></td>
+                                <td><h4>Project<br><span>Summit</span></h4></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imgBx"><img src="giwclogo.jpg"></div></td>
+                                <td><h4>Iron<br><span>Gathering</span></h4></td>
+                            </tr>
+                         </tbody>
+                     </table>
+                </div>
+             </div>
+
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

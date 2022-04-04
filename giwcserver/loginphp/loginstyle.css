@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    background-color: rgb(189, 241, 212);
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+#main{
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#title_msg{
+    display: block;
+    font-family: 'Circular Std';
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+#logo{
+    width: 120px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inp{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 20px;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.container label{
+    position: relative;
+    top:-10px;
+    font-family:'Circular Std';
+    font-size: 14px;
+    color: #2b1919;
+    pointer-events: none;
+    transition: all .2s;
+}
+
+.inp:focus + label{
+    top: -30px;
+}
+
+.inp:valid + label{
+    top: -30px;
+}
+#line{
+    width: 100%;
+    height: 0.1em;
+    background-color: #adadad;
+    position: relative;
+    overflow: hidden;
+}
+
+#line:before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg, teal, seagreen);
+    position: absolute;
+    left: -100%;
+    transition: all .4s;
+}
+
+.inp:focus ~ #line:before{
+    left: 0%;
+}
+.inp:valid ~ #line:before{
+    left: 0%;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Circular Std';
+    font-size: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9999;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+button:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 0;
+    background:linear-gradient(45deg, teal, seagreen);
+    z-index: -1;
+    transition: all .4s;
+}
+
+button:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    top: 0px;
+    background: linear-gradient(45deg, seagreen, teal);
+    transition: all .4s;
+    z-index: -1;
+}
+
+button:hover:before{
+    left: 100%;
+}
+
+button:hover:after{
+    left: 0%;
+}
+
+
+ .backbtn{
+   
+    font-family: 'Circular Std';
+    font-size: 18px;
+    color: #adadad;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 2px;
+}
+.status{
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    color: red;
+    background: #f1d3d3;
+    border: 1px solid red;
+    width: 50%;
+    text-align: center;
+    font-family: 'Circular Std';
+}
+

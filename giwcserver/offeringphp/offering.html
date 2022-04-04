@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Offerings
+    </title>
+    <link rel="stylesheet" href="offering.css">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"  onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="expenses.html"><img class="next" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/hand-coin-line.svg"><span>Offerings & Tithes.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="maindash.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+                <form  method="POST" action="offconnect.php" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Week</label><label class="validation-error hide" id="dateValidationError">This field is required.</label>
+                        <input type="week" name="offweek" id="offweek">
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="offdate" id="offdate">
+                    </div>
+                    <div>
+                        <label>Program</label>
+                       <select name="offprogram" id="offprogram">
+                           <option label="Sunday Service" value="Sunday Service"></option>
+                           <option label="Anointing Service" value="Anointing Service"></option>
+                           <option label="Thanksgiving Service" value="Thanksgiving Service"></option>
+                           <option label="Special Service" value="Special Service"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Offering Type</label>
+                       <select name="offertype" id="offertype">
+                           <option value="Sunday Offering">Sunday Offering</option>
+                           <option label="Seed Offering" value="Seed Offering"></option>
+                           <option label="Thanksgiving" value="Thanksgiving"></option>
+                           <option label="Special Offering" value="Special Offering"></option>
+                           <option label="First Fruit" value="First Fruit"></option>
+                           <option label="Sacrifice Offering" value="Sacrifice Offering"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Offering Amount</label>
+                        <input type="text" name="ofamount" id="ofamount">
+                    </div>
+                    <div>
+                        <label>Tithe Amount</label>
+                        <input type="text" name="thamount" id="thamount">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList">
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Offering..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Date</th>
+                            <th>Program</th>
+                            <th>Offering Type</th>
+                            <th>Offering Amount</th>
+                            <th>Tithe Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="offering.js"></script>
+</body>
+
+</html>

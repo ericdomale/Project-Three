@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pledges
+    </title>
+    <link rel="stylesheet" href="pledge.css">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"   onclick="history.back()" src="../svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="revenue.html"><img class="next" src="../svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="../svg/medal-fill.svg"><span>Pledges.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="../settingsphp/settings.php" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+                <form method="POST" action="pledgeconn.php" autocomplete="off">
+                    <div>
+                        <label>Pledger Name</label><label class="validation-error hide" id="expnameValidationError">This field is required.</label>
+                        <input type="text" name="expname" id="expname">
+                    </div>
+                    <div>
+                        <label>Event/Program</label>
+                       <select name="expgory" id="expgory">
+                        <option label="Sunday Service" value="Sunday Service"></option>
+                        <option label="Anointing Service" value="Anointing Service"></option>
+                        <option label="Thanksgiving Service" value="Thanksgiving Service"></option>
+                        <option label="Special Service" value="Special Service"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="expdate" id="expdate">
+                    </div>
+                    <div>
+                        <label>Current Status</label>
+                       <select name="paytm" id="paytm">
+                           <option label="Paid" value="Paid"></option>
+                           <option label="Unpaid" value="Unpaid"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Month</label>
+                       <select name="expmonth" id="expmonth">
+                           <option value="January">January</option>
+                           <option label="February" value="February"></option>
+                           <option label="March" value="March"></option>
+                           <option label="April" value="April"></option>
+                           <option label="May" value="May"></option>
+                           <option label="June" value="June"></option>
+                           <option label="July" value="July"></option>
+                           <option label="August" value="August"></option>
+                           <option label="September" value="September"></option>
+                           <option label="October" value="October"></option>
+                           <option label="November" value="November"></option>
+                           <option label="December" value="December"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Amount Pledged</label>
+                        <input type="text" name="expamount" id="expamount">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList">
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Pledges..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Pledger Name</th>
+                            <th>Pledge Category</th>
+                            <th>Date</th>
+                            <th>Current Status</th>
+                            <th>Month</th>
+                            <th>Amount Pledged</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="pledge.js"></script>
+</body>
+
+</html>

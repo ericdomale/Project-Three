@@ -1,0 +1,168 @@
+*{
+    /*margin: 0;
+    padding: 0;*/
+    box-sizing: border-box;
+    font-family: 'Circular Std';
+}
+html, body{
+    position: relative;
+   /* background-image: linear-gradient(60deg, #cfd9cf, ivory);*/
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    position: absolute;
+    height: 100%;
+    width: 500px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   /* box-shadow: -3px 4px 30px 3px rgba(0, 0, 0, 0.5);*/
+}
+.prof-card{
+    width: 100%;
+    position: absolute;
+}
+.iconic{
+    text-align: center;
+    color: #383737;
+    position: relative;
+    height: 40%;
+    width: 100%;
+    background-color: #3de09f;
+    padding: 20px;
+}
+.iconic .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.iconic .info{
+    padding: 5px 0;
+}
+.count table{
+    color: #383737;
+    margin: 10px auto;
+    letter-spacing: 2px;
+}
+table tr td{
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.menu-item{
+    padding: 20px 30px;
+    height: 50%;
+    background-color: #f8dff8;
+}
+.item{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    padding: 10px 5px;
+    cursor: pointer;
+    margin: 2px 0;
+}
+.item:hover{
+    color: #112266;
+    transition: 300ms ease;
+}
+.image{
+    width: 10%;
+}
+.bold{
+    font-weight: 800;
+}
+.number{
+    width: 5%;
+    background-color: rgb(177, 223, 197);
+    color: green;
+    padding: 7px 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.fname, .sname{
+    width: 10%;
+    background-color: rgb(183, 183, 219);
+    color: #112266;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 500;
+    font-size: larger;
+    text-decoration: none;
+}
+
+/*body > table{
+    width: 50%;
+    font-family: 'Circular Std', sans-serif;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+        url('CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+        url('CircularStd-Medium.woff2') format('woff2'),
+        url('CircularStd-Medium.woff') format('woff'),
+        url('CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+h1{
+    font-family: 'Circular Std';
+    text-align: center;  
+}
+
+
+table{
+    border-collapse: collapse;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+table.list{
+    width:100%;
+}
+table thead{
+    margin-top: 10px;
+}
+
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Circular Std';
+}
+
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #d4d4d4;
+}
+label {
+    font-family: 'Circular Std';
+}*/

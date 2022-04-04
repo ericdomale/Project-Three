@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Expenses
+    </title>
+    <link rel="stylesheet" href="expenses.css">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"   onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="revenue.html"><img class="next" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/coins-fill.svg"><span>Expenses.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="maindash.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Expense Name</label><label class="validation-error hide" id="expnameValidationError">This field is required.</label>
+                        <input type="text" name="expname" id="expname">
+                    </div>
+                    <div>
+                        <label>Expense Category</label>
+                       <select name="expgory" id="expgory">
+                           <option label="Fuel" value="Fuel"></option>
+                           <option label="Sundry" value="Sundry"></option>
+                           <option label="Salaries" value="Salaries"></option>
+                           <option label="Internet" value="Internet"></option>
+                           <option label="Air Condition" value="Air Condition"></option>
+                           <option label="Office Stationery" value="Office Stationery"></option>
+                           <option label="General Maintenance" value="General Maintenance"></option>
+                           <option label="Communion" value="Communion"></option>
+                           <option label="Phone Bills" value="Phone Bills"></option>
+                           <option label="Water" value="Water"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="expdate" id="expdate">
+                    </div>
+                    <div>
+                        <label>Payment Method</label>
+                       <select name="paytm" id="paytm">
+                           <option label="Cash" value="Cash"></option>
+                           <option label="Mobile Money" value="Mobile Money"></option>
+                           <option label="Bank Transfer" value="Bank Transfer"></option>
+                           <option label="Debit Card" value="Debit Card"></option>
+                           <option label="Bank Deposit" value="Bank Deposit"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Month</label>
+                       <select name="expmonth" id="expmonth">
+                           <option value="January">January</option>
+                           <option label="February" value="February"></option>
+                           <option label="March" value="March"></option>
+                           <option label="April" value="April"></option>
+                           <option label="May" value="May"></option>
+                           <option label="June" value="June"></option>
+                           <option label="July" value="July"></option>
+                           <option label="August" value="August"></option>
+                           <option label="September" value="September"></option>
+                           <option label="October" value="October"></option>
+                           <option label="November" value="November"></option>
+                           <option label="December" value="December"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Expense Amount</label>
+                        <input type="text" name="expamount" id="expamount">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList">
+                    <div>
+                    <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Expenses..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Expense Name</th>
+                            <th>Expense Category</th>
+                            <th>Date</th>
+                            <th>Payment Method</th>
+                            <th>Month</th>
+                            <th>Expense Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="expenses.js"></script>
+</body>
+
+</html>

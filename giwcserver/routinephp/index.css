@@ -1,0 +1,183 @@
+#collapsing_header {
+	position: relative;
+	z-index: 10;
+    padding: var(--space-0);
+    padding-bottom: 0;
+    background: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+#collapsing_header > a {
+	float: right;
+}
+#collapsing_header > a > button {
+	height: var(--space-5);
+	width: var(--space-5);
+	font-size: 30px;
+	
+}
+
+
+
+header {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+	grid-template-rows: 1fr;
+	justify-items: center;
+}
+header > button {
+	width: var(--space-5);
+	height: var(--space-5);
+	border-bottom: 2px solid #FFF;
+	color: #777;
+	border-radius: 0;
+}
+header > button.open {
+	color: #000;
+	border-color: #000;
+}
+header > button:active {
+	color: #555;
+	background-color: #EEE;
+}
+
+
+
+
+
+
+
+
+
+
+#timetable {
+	display: grid;
+	grid-template-columns: var(--space-6) 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: var(--space--1);
+	padding: var(--space--1);
+}
+
+
+
+
+
+#periods_container > .period {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: var(--space-5);
+	text-align: center;
+	color: #555;
+}
+#periods_container > .period > span {
+	display: block;
+	font-size: var(--space--1);
+}
+
+
+
+
+
+#subjects_container > .subject {
+	height: var(--space-5);
+	line-height: var(--space-5);
+	padding: 0 var(--space-0) 0 var(--space-0);
+	box-sizing: border-box;
+	font-size: var(--space-0);
+	transition: opacity 0.15s, transform 0.15s;
+	border-radius: 5px;
+  background-color: #FFF;
+  box-shadow: 0 5px 10px rgb(202, 201, 201);
+}
+#subjects_container > * + .subject, #periods_container > * + .period {
+	margin-top: var(--space--1);
+}
+
+.subject.empty {
+	visibility: hidden;
+}
+
+.subject.hidden {
+	opacity: 0;
+	transform: translateY(10px);
+}
+
+#subjects_container > .subject > span:nth-of-type(2) {
+	float: right;
+	font-size: var(--space--1);
+}
+
+.nav{
+    position: relative;
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .left_area h3{
+    color: rgb(102, 38, 38);
+    margin: 0;
+    /*text-transform: uppercase;*/
+    font-size: 35px;
+    font-weight: 950;
+    display: inline;
+  }
+  
+  .left_area span{
+    color: seagreen;
+    font-family: 'Circular Std';
+  }
+  .left_area .image{
+    width: 2%;
+    padding-right: 10px;
+}
+  
+  .logout_btn{
+    padding: 5px;
+    background: seagreen;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+    font-family: 'Circular Std';
+  }
+  
+  .logout_btn:hover, .home_btn:hover{
+    background: #24aa41;
+  }
+  .home_btn{
+    padding: 5px;
+    background: seagreen;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 120px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+    font-family: 'Circular Std';
+  }
+
+  .left_area .next {
+    width: 2%;
+    padding-right: 10px;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.left_area .prev {
+    width: 2%;
+    float: left;
+    cursor: pointer;
+}

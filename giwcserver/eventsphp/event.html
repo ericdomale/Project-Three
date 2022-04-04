@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Events & Programs
+    </title>
+    <link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"  onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="settings.html"><img class="next" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/calendar-todo-fill.svg"><span>Events & Programs.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="maindash.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+               <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                   <div>
+                       <label>Event Name</label><label class="validation-error hide" id="eventnameValidationError">This field is required.</label>
+                       <input type="text" name="eventname" id="eventname">
+                    </div>
+                    <div>
+                        <label>Date From</label><label class="validation-error hide" id="firstNameValidationError">This field is required.</label>
+                        <input type="date" name="fdate" id="fdate">
+                    </div>
+                    <div>
+                        <label>To</label>
+                        <input type="date" name="todate" id="todate">
+                    </div>
+                    <div>
+                     <div>
+                        <label>Event Time</label>
+                        <input type="time" name="eventtime" id="eventtime">
+                    </div>
+                    <div>
+                        <label>Guest Speakers</label>
+                        <input type="text" name="speakers" id="speakers">
+                    </div>
+                    <label>Event Income</label>
+                    <input type="text" name="eincome" id="eincome">
+                </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList" id="addData()"> 
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Events..." />
+                    </div>
+                    <thead>
+                        <tr data-href="tithe.html">
+                            <th>Event Name</th>
+                            <th>Date From</th>
+                            <th>To</th>
+                            <th>Event Time</th>
+                            <th>Guest Speakers</th>
+                            <th>Event Income</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                             
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+
+  
+    <script src="event.js"></script>
+</body>
+
+</html>

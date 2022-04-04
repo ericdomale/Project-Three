@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Staff Workers
+    </title>
+    <link rel="stylesheet" href="staff.css">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"  onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="tithe.html"><img class="next" onclick="history.forward()" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/team-fill.svg"><span>Staff Workers.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="settings.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+  
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+               <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                   <div>
+                       <label>Staff No.</label><label class="validation-error hide" id="shipnoValidationError">This field is required.</label>
+                       <input type="text" name="staffno" id="staffno">
+                    </div>
+                    <div>
+                        <label>First Name</label><label class="validation-error hide" id="firstNameValidationError">This field is required.</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label>Surname</label>
+                        <input type="text" name="Surname" id="Surname">
+                    </div>
+                    <div>
+                     <div>
+                        <label>D.O.B</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                       <select name="Gender" id="Gender">
+                           <option value="Male">Male</option>
+                           <option label="Female" value="Female"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Status</label>
+                       <select name="status" id="status">
+                           <option value="Single">Single</option>
+                           <option label="Married" value="Married"></option>
+                           <option label="Divorced" value="Divorced"></option>
+                           <option label="Widow" value="Widow"></option>
+                           <option label="Widower" value="Widower"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Contact No.</label>
+                        <input type="number" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Job Description</label>
+                        <input type="text" name="jobdesc" id="jobdesc">
+                    </div>
+                    <div>
+                        <label>Chapel Group</label>
+                       <select name="chapel" id="chapel">
+                           <option value="Faith Chapel">Faith Chapel</option>
+                           <option label="Love Chapel" value="Love Chapel"></option>
+                           <option label="Joy Chapel" value="Joy Chapel"></option>
+                           <option label="Grace Chapel" value="Grace Chapel"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Employed Since</label>
+                        <input type="date" name="empsince" id="empsince">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList">
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Worker..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Staff No.</th>
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>D.O.B</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Email</th>
+                            <th>Contact No.</th>
+                            <th>City</th>
+                            <th>Job Description</th>
+                            <th>Chapel Group</th>
+                            <th>Employed Since</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                             
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="staff.js"></script>
+</body>
+
+</html>

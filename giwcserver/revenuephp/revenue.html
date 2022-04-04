@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Revenue
+    </title>
+    <link rel="stylesheet" href="revenue.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="left_area">
+            <h3><img class="prev" onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="event.html"><img class="next" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/wallet-3-fill.svg"><span>Revenue.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="maindash.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        <br>
+        <br>
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Week</label><label class="validation-error hide" id="dateValidationError">This field is required.</label>
+                        <input type="week" name="week" id="week">
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label>Month</label>
+                       <select name="rmonth" id="rmonth">
+                           <option value="January">January</option>
+                           <option label="February" value="February"></option>
+                           <option label="March" value="March"></option>
+                           <option label="April" value="April"></option>
+                           <option label="May" value="May"></option>
+                           <option label="June" value="June"></option>
+                           <option label="July" value="July"></option>
+                           <option label="August" value="August"></option>
+                           <option label="September" value="September"></option>
+                           <option label="October" value="October"></option>
+                           <option label="November" value="November"></option>
+                           <option label="December" value="December"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Revenue Type</label>
+                       <select name="revtype" id="revtype">
+                           <option label="Offering" value="Offering"></option>
+                           <option label="Pledges" value="Pledges"></option>
+                           <option label="Project Offering" value="Project Offering"></option>
+                           <option label="Tithes" value="Tithes"></option>
+                           <option label="Sacrifices" value="Sacrifices"></option>
+                           <option label="Donations" value="Donations"></option>
+                           <option label="Seed Offering" value="Seed Offering"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Revenue Amount</label>
+                        <input type="text" name="revamount" id="revamount">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                 <table class="list" id="employeeList">
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Revenue..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Date</th>
+                            <th>Month</th>
+                            <th>Revenue Type</th>
+                            <th>Revenue Amount</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="revenue.js"></script>
+</body>
+
+</html>

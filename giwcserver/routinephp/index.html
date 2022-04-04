@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title data-translator-key="timetable">Timetable</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="general.css"/>
+		<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css"/>
+		<script src="configuration.js"></script>
+		<script src="translator.js"></script>
+		<script src="script.js"></script>
+
+		<link rel="manifest" href="manifest.json"/>
+		<meta name="theme-color" content="#FFFFFF"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Stundenplan">
+		<link rel="apple-touch-icon" href="icon.png">
+	</head>
+
+
+
+	<body>
+		   <div class="nav">
+			<div class="left_area">
+				<h3><img class="prev"  onclick="history.back()" src="../svg/arrow-left-circle-line.svg"></h3>
+				<h3><a href="../pledgesphp/pledge.php"><img class="next" src="../svg/arrow-right-circle-line.svg"></a></h3>
+				<h3><img class="image" src="../svg/calendar-event-fill.svg"><span>Church Routines.</span></h3>
+			  </div>
+			  <div class="right_area">	
+				<a  href="../maindashphp/maindash.php" class="home_btn">Home</a>
+			  </div>
+			  <div class="right_area">
+				<a  href="../loginphp/login.php" class="logout_btn">Logout</a>
+			  </div>
+			</div>
+	    <div id="collapsing_header">
+		    <h1 data-translator-key="timetable"></h1>
+		    <a href="settings.html"><button class="icon-settings"></button></a>
+		</div>
+
+		<header></header>
+
+		<div id="timetable">
+			<div id="periods_container"></div>
+
+			<div id="subjects_container"></div>
+		</div>
+	</body>
+</html>

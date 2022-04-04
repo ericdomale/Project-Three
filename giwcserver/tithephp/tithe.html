@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Tithe
+    </title>
+    <link rel="stylesheet" href="tithe.css">
+</head>
+
+<body>
+    <header>
+        <div class="left_area">
+            <h3><img class="prev"  onclick="history.back()" src="svg/arrow-left-circle-line.svg"></h3>
+            <h3><a href="setmain.html"><img class="next" onclick="history.forward()" src="svg/arrow-right-circle-line.svg"></a></h3>
+            <h3><img class="image" src="svg/account-pin-circle-line.svg"><span>Member Tithes.</span></h3>
+          </div>
+          <div class="right_area">
+            <a  href="/settings.html" class="home_btn">Home</a>
+          </div>
+          <div class="right_area">
+            <a  href="login.html" class="logout_btn">Logout</a>
+          </div>
+        </header>
+        
+    <table>
+      <!-- <tr>-->
+            <!--<td>-->
+               <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                   <div>
+                       <label>Member No.</label><label class="validation-error hide" id="shipnoValidationError">This field is required.</label>
+                       <input type="text" name="shipno" id="shipno">
+                    </div>
+                    <div>
+                        <label>First Name</label><label class="validation-error hide" id="firstNameValidationError">This field is required.</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div>
+                        <label>Surname</label>
+                        <input type="text" name="Surname" id="Surname">
+                    </div>
+                    <div>
+                     <div>
+                        <label>Payment Date</label>
+                        <input type="date" name="pdate" id="pdate">
+                    </div>
+                    <div>
+                        <label>Tithe Type</label>
+                       <select name="titype" id="titype">
+                           <option value="Personal">Personal</option>
+                           <option label="Company" value="Company"></option>
+                           <option label="N/A" value="N/A"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Month</label>
+                       <select name="pmonth" id="pmonth">
+                           <option value="January">January</option>
+                           <option label="February" value="February"></option>
+                           <option label="March" value="March"></option>
+                           <option label="April" value="April"></option>
+                           <option label="May" value="May"></option>
+                           <option label="June" value="June"></option>
+                           <option label="July" value="July"></option>
+                           <option label="August" value="August"></option>
+                           <option label="September" value="September"></option>
+                           <option label="October" value="October"></option>
+                           <option label="November" value="November"></option>
+                           <option label="December" value="December"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Amount Paid</label>
+                        <input type="text" name="pamount" id="pamount">
+                    </div>
+                    <div>
+                        <label>Others</label>
+                       <select name="others" id="others">
+                           <option value="Pledge">Pledge</option>
+                           <option label="Project Offering" value="Project Offering"></option>
+                           <option label="Donation" value="Donation"></option>
+                           <option label="Seed Offering" value="Seed Offering"></option>
+                           <option label="First Fruit" value="First Fruit"></option>
+                           <option label="Thanksgiving" value="Thanksgiving"></option>
+                           <option label="Sacrifice Offering" value="Sacrifice Offering"></option>
+                           <option label="N/A" value="N/A"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Month</label>
+                       <select name="otmonth" id="otmonth">
+                           <option value="January">January</option>
+                           <option label="February" value="February"></option>
+                           <option label="March" value="March"></option>
+                           <option label="April" value="April"></option>
+                           <option label="May" value="May"></option>
+                           <option label="June" value="June"></option>
+                           <option label="July" value="July"></option>
+                           <option label="August" value="August"></option>
+                           <option label="September" value="September"></option>
+                           <option label="October" value="October"></option>
+                           <option label="November" value="November"></option>
+                           <option label="December" value="December"></option>
+                       </select>
+                    </div>
+                    <div>
+                        <label>Amount Paid</label>
+                        <input type="text" name="otamount" id="otamount">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            <!--</td>-->
+            <br>
+            <td>
+                <table class="list" id="employeeList">
+                    <div>
+                        <label>Search</label>
+                     <input type="search" name="searchbar" id="search" placeholder="Search Tithes..." />
+                    </div>
+                    <thead>
+                        <tr>
+                            <th>Member No.</th>
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>Payment Date</th>
+                            <th>Tithe Type</th>
+                            <th>Month</th>
+                            <th>Amount Paid</th>
+                            <th>Others</th>
+                            <th>Month</th>
+                            <th>Amount Paid</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br>
+                <div class="save-buttons">
+                    <input type="submit" value="PDF">
+                </div>
+                <div class="save-buttons">
+                    <input type="submit" value="Excel">
+                </div>
+            </td>
+       <!-- </tr>-->
+    </table>
+  
+    <script src="tithe.js"></script>
+</body>
+
+</html>
